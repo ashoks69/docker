@@ -6,7 +6,7 @@ resource "aws_instance" "this" {
     volume_size = 50
     volume_type = "gp3"
   }
-  user_data = file("docker.sh")
+  
   tags = {
     Name    = "docker"
   }
